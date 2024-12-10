@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <style>
+    body {
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      height: 100vh;          
+      margin: 0; 
+                
+    }
+
+    .main {
+  
+      background-color: rgb(25, 243, 174);              
+    }
+
+   /* .form-horizontal {
+  max-width: 500px;               
+  margin: 50px auto;              
+  padding: 20px;                  
+     
+  border-radius: 8px;             
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }*/
+    .form-group {
+  margin-bottom: 15px;
+  padding-left: 50px;  
+  padding-right: 50px;  
+      
+}
+
+label {
+  font-size: 14px;              
+  font-weight: bold;             
+  display: block;                 
+  margin-bottom: 5px;             
+}
+
+input.form-control {
+  width: 100%;                    
+  padding: 10px;                  
+  border-radius: 4px;             
+  font-size: 14px;                
+}
+
+input.form-controler {
+  width: 80%;                    
+  padding: 20px;                  
+  border-radius: 4px;             
+  font-size: 14px;                
+}
+
+input.form-control:focus {
+  border-color: #007bff;          
+  outline: none;                 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+label {
+      display: inline-block; 
+      margin-right: 15px;
+}
+
+.checkbox-group {
+      display: flex;
+      gap: 20px; /* Space between checkboxes */
+      align-items: center; /* Align checkboxes vertically centered */
+    }
+
+    header {
+      display: inline-block; 
+      margin-right: 15px;
+      background-color: rgb(174, 238, 208);
+}
+.submit-btn {
+      background-color: #FFEB3B; 
+      color: rgb(8, 1, 1);              
+      border: none;              
+      padding: 15px 200px;        
+      font-size: 20px;          
+      font-weight: bold;         
+      cursor: pointer;          
+      border-radius: 5px;        
+      transition: background-color 0.3s; 
+      margin-right: 5px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+     
+    }
+
+    .checkbox-container {
+     
+      display: inline-block;
+      margin-right: 20px; 
+    }
+
+  
+
+    
+
+
+    </style>
+  </head>
+  <body>
+   <div class="main">
+    <header>
+      <h1>DEVELOPERS SERVEY FORM</h1>
+      <P>Thank you for taking the time to help us know the about world wide developer</P>
+    </header>
+    <div>
+      <form class="form-horizontal" action="">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="name" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Email:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Age:</label>
+          <input type="age" class="form-control" id="age">
+        </div>
+        <div class="form-group">
+          <label for="nat">Nationality:</label>
+          <select id="nat" name="Nationality">
+            <option value="" disabled selected>Select a Nationality</option>
+            <option value="sinhala">Sinhala</option>
+            <option value="tamil">Tamil</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dev">Developer:</label>
+          
+          <label>
+            <input type="radio" name="option" value="option1"> Option 1
+          </label>
+          <label>
+            <input type="radio" name="option" value="option2"> Option 2
+          </label>
+          <label>
+            <input type="radio" name="option" value="option3"> Option 3
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="Qli">Qlification:</label>
+          <div class="checkbox-container">
+            <input type="checkbox" id="option1" name="option1" value="Option 1">
+            <label for="option1">Option 1</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="option1" name="option1" value="Option 1">
+            <label for="option1">Option 1</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="option1" name="option1" value="Option 1">
+            <label for="option1">Option 1</label>
+          </div>
+        </div>
+        <div class="form-group">
+        
+          <div class="box">
+            <label for="des">Describe about you:</label>
+            <input type="des" class="form-controler" id="describe">
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+
+      </form>
+    </div>
+   </div>
+    
+  </body>
+</html>
